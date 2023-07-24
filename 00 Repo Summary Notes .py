@@ -1,3 +1,47 @@
+# 10. read tabular data file into pandas
+# 11 Select a Panda Series from a Dataframe
+# 12 Pandas Method and Attributes
+# 13 Rename Columns
+# 14 Removing Data; Drop rows and columns
+# 15 Sorting Pandas DataFrame or a Series
+# 16 Filtering
+# 17 Filtering Multiple Criteria
+# 18 selecting while loading csv: usecols and looping
+# 19 Axis
+# 20 Pandas Str Method 
+# 21 Changing Data Type
+# 22 Groupby
+	# Chart/Graph
+# 23 Exploring a Panda Series
+# 24 Handle Missing Values
+# 25 Index and Indices
+# 25_2 Index - Index Aligment and Concat
+# 26 Selecting Multiple rows and columns (loc and iloc)
+# 27 inplace
+# 28 DataFrame Efficency with Categorical Dtype
+# 29 Kaggle, scikit learn, to_pickle, read_pickle
+# 30 ufo.isnull() vs pd.isnull(ufo), ufo.sample for sampling
+# 31 Creating Dummy Variables and Map
+# 32 Dates and Times in Pandas
+# 33 Find and Remove Duplicate rows in pandas
+# 34 Settingwithcopywarning and using copy()
+# 35 Display Options
+# 36 Creating DataFrame
+# 37 apply, map, and applymap
+# 38 Multiindex
+# 38 Merge
+# 40
+	# Create a datetime column from a DataFrame
+	# Create a category column during file reading
+	# Convert the data type of multiple columns at once
+	# Apple Multiple Aggregations on a Series or Dataframe
+# 41
+	# ix replacement
+	# aliases have been added for isnull and notnull (isna)
+	# drop now accepts "index" and "columns" keywords
+	# Ordered Categories must be specified indepedent of the data
+
+
 # 10. read tabular data file intp pandas
 	import pandas as pd
 	orders = pd.read_table('http://bit.ly/chiporders')
@@ -52,6 +96,9 @@
 
 	# Modifying Columns w/ str
 	ufo.columns = ufo.columns.str.replace(' ', '_') #Replacing space with _
+	
+	df.add_prefix('X_')
+	df.add_suffix('_Y')
 	
 # 14 Removing Data; Drop rows and columns
 
